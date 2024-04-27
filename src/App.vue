@@ -2,7 +2,16 @@
   <section>
     <h2>My friends</h2>
     <ul>
-      <li></li>
+      <friend-contact
+        name="Andrzej"
+        phone-number="123 456 789"
+        email-address="wp.pl@pl"
+      ></friend-contact>
+      <friend-contact
+        name="Rafał"
+        phone-number="123 456 789"
+        email-address="rafal123@wp.pl"
+      ></friend-contact>
     </ul>
   </section>
 </template>
