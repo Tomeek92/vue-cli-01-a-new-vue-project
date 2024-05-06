@@ -3,14 +3,12 @@
     <h2>My friends</h2>
     <ul>
       <friend-contact
-        name="Andrzej"
-        phone-number="123 456 789"
-        email-address="wp.pl@pl"
-      ></friend-contact>
-      <friend-contact
-        name="Rafał"
-        phone-number="123 456 789"
-        email-address="rafal123@wp.pl"
+        v-for="friend in friends"
+        :key="friend.id"
+        :name="friend.name"
+        :phone-number="friend.phone"
+        :email-address="friend.email"
+        :is-favorite="true"
       ></friend-contact>
     </ul>
   </section>
@@ -22,14 +20,14 @@ export default {
       friends: [
         {
           id: "Andrzej",
-          name: "Skonieczny",
-          phone: "1234567",
+          name: "Romano",
+          phone: "12345678",
           email: "AndrzejSkonczeny@wp.pl",
         },
         {
           id: "Pietrek",
-          name: "Skonieczny",
-          phone: "1234567",
+          name: "Pietrek",
+          phone: "123456799999",
           email: "PietrekSkonczeny@wp.pl",
         },
       ],
